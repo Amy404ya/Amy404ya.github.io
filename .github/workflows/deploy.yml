@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main, master ]  # 在推送到主分支时触发
+    branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
 
@@ -18,10 +18,21 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '18'
-        cache: 'npm'
+        # 移除 cache 配置，或者根据你的包管理器调整
+        # cache: 'npm'
 
     - name: Install dependencies
-      run: npm install
+      run: |
+        # 如果使用 yarn
+        # npm install -g yarn
+        # yarn install
+        
+        # 如果使用 pnpm  
+        # npm install -g pnpm
+        # pnpm install
+        
+        # 如果都没有锁文件，直接安装
+        npm install
 
     - name: Build project
       run: npm run build
@@ -32,11 +43,8 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        # 上传构建输出的 dist 目录
         path: './dist'
 
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
