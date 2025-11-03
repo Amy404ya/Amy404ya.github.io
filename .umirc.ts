@@ -18,7 +18,7 @@ export default defineConfig({
     { path: "/test", component: "Test" },
   ],
   npmClient: 'pnpm',
-  favicons: ['/yay.jpg'],
+  favicons: ['/favicon.ico'],
   metas: [
     {
       name: 'description',
