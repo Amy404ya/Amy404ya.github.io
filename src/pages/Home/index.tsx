@@ -1,5 +1,5 @@
 import React from 'react'
-import yayJap from '../../assets/yay.jpg'
+import yayJap from '../../../public/assets/yay.jpg'
 
 export default function index() {
   return (

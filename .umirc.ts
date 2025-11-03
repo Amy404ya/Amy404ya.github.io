@@ -18,11 +18,12 @@ export default defineConfig({
     { path: "/test", component: "Test" },
   ],
   npmClient: 'pnpm',
-  favicons: ['/favicon.ico'],
+  favicons: ['/assets/favicon.ico'],
   metas: [
     {
-      name: 'description',
-      content: 'SecretHut',
+      name: 'viewport',
+      content:
+        'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0',
     },
   ],
 });
