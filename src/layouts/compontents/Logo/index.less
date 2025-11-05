@@ -2,6 +2,7 @@
 @import url(../../../common.less);
 
 .logoWrap{
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,7 +20,32 @@
   }
 
   & > span{
-    color: var(--text-color);
+    position: absolute;
+    top: 3px;
+    right: 0;
+    // margin-left: -150px;
+    display: inline-block;
+    z-index: 1;
     font-size: 26px;
+    /* 渐变文本（标准 + WebKit 兼容） */
+    background: linear-gradient(90deg, blue, #66ffff 10%, #cc00ff 20%, #CC00CC 30%, #CCCCFF 40%, #00FFFF 50%, #CCCCFF 60%, #CC00CC 70%, #CC00FF 80%, #66FFFF 90%, blue 100%);
+    background-image: -webkit-linear-gradient(left, blue, #66ffff 10%, #cc00ff 20%, #CC00CC 30%, #CCCCFF 40%, #00FFFF 50%, #CCCCFF 60%, #CC00CC 70%, #CC00FF 80%, #66FFFF 90%, blue 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    -webkit-background-size: 200% 100%; 
+    animation: masked-animation 4s linear infinite;
+    -webkit-animation: masked-animation 4s linear infinite;
+  }
+
+  @keyframes masked-animation {
+      0% {
+          background-position: 0  0;
+      }
+      100% {
+          background-position: -100%  0;
+      }
   }
 }
