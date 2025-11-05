@@ -7,15 +7,21 @@ const publicPath = isUserPage ? '/' : `/${repositoryName}/`;
 const base = isUserPage ? '/' : `/${repositoryName}/`;
 
 export default defineConfig({
-  title: 'SecretHut',
+  plugins: [
+    '@umijs/plugins/dist/model'
+  ],
+  model: {},
+  title: `Amy's SecretHut`,
   publicPath,
   base,
+  outputPath: 'dist',
   history: {
     type: 'hash',
   },
   routes: [
-    { path: "/", component: "Home" },
-    { path: "/test", component: "Test" },
+    { path: "/", component: "Home", name: 'Home' },
+    { path: "/test", component: "Test", name: 'Test' },
+    { path: '/*', redirect: '/', keepQuery: true },
   ],
   npmClient: 'pnpm',
   favicons: ['/assets/favicon.ico'],

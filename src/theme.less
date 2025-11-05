@@ -1,0 +1,44 @@
+
+:global(.darkTheme) {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+}
+
+:global(.lightTheme) {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* 统一的光芒效果 mixin - 根据主题自动切换 */
+.glow() {
+  // 深色主题：白到黑光芒
+  :global(.darkTheme) & {
+    box-shadow:
+      0 0 0 0 #fff,
+      0 0 12px 8px #000,
+      0 0 24px 16px #0008;
+    color: #fff;
+    background: radial-gradient(circle, #fff 0%, #444 70%, #000 100%);
+    &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0, 0.1);
+      border-radius: 50%;
+    }
+  }
+
+  // 浅色主题：黑到白光芒
+  :global(.lightTheme) & {
+    // border: 2px solid #000;
+    // box-shadow:
+    //   0 0 0 4px #000,
+    //   0 0 24px 8px #fff,
+    //   0 0 48px 16px #fff8;
+    // color: #111;
+    // background: radial-gradient(circle, #000 0%, #bbb 70%, #fff 100%);
+  }
+}

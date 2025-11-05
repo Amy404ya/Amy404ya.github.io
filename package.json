@@ -9,6 +9,8 @@
     "start": "npm run dev"
   },
   "dependencies": {
+    "@umijs/max": "^4.5.3",
+    "@umijs/plugins": "^4.5.3",
     "umi": "^4.5.3"
   },
   "devDependencies": {
