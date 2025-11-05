@@ -14,6 +14,9 @@ importers:
       '@umijs/plugins':
         specifier: ^4.5.3
         version: 4.5.3(@babel/core@7.28.5)(@types/react-dom@18.3.7(@types/react@18.3.26))(@types/react@18.3.26)(antd@4.24.16(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(dva@2.5.0-beta.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(rc-field-form@1.38.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-intl-universal:
+        specifier: ^2.13.4
+        version: 2.13.4(react@18.3.1)
       umi:
         specifier: ^4.5.3
         version: 4.5.3(@babel/core@7.28.5)(@types/node@24.9.2)(@types/react@18.3.26)(@types/webpack@5.28.5)(@utoo/pack@0.0.1-alpha.59(@types/webpack@5.28.5)(webpack@5.102.1))(eslint@8.35.0)(lightningcss@1.22.1)(prettier@3.6.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@3.29.5)(sass@1.54.0)(stylelint@14.8.2)(terser@5.44.0)(type-fest@0.20.2)(typescript@5.9.3)(webpack@5.102.1)
@@ -4845,6 +4848,11 @@ packages:
     peerDependencies:
       react: ^16.6.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.6.0 || ^17.0.0 || ^18.0.0
+
+  react-intl-universal@2.13.4:
+    resolution: {integrity: sha512-38dBr1w9GjsIsSJheVGS2svlHiCd5H2RMR4Vz9rVbTM/35S717uhRuU1P+Tsk68rVkcMmGwtjHMu/3dfyRlg3Q==}
+    peerDependencies:
+      react: '*'
 
   react-intl@3.12.1:
     resolution: {integrity: sha512-cgumW29mwROIqyp8NXStYsoIm27+8FqnxykiLSawWjOxGIBeLuN/+p2srei5SRIumcJefOkOIHP+NDck05RgHg==}
@@ -11806,6 +11814,14 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       react-fast-compare: 3.2.2
       shallowequal: 1.1.0
+
+  react-intl-universal@2.13.4(react@18.3.1):
+    dependencies:
+      escape-html: 1.0.3
+      intl-messageformat: 7.8.4
+      invariant: 2.2.4
+      lodash.merge: 4.6.2
+      react: 18.3.1
 
   react-intl@3.12.1(@types/react@18.3.26)(react@18.3.1):
     dependencies:

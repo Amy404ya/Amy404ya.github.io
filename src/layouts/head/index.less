@@ -1,7 +1,23 @@
+@import url(../../theme.less);
+@import url(../../common.less);
+
 .headerWrapper{
   height: 64px;
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;;
+}
+
+.headerWrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0; /* 定位在底部 */
+  left: 0;
+  right: 0;
+  background: var(--linear-line);
+  display: block;
+  height: 1px;
+  opacity: .4;
 }
