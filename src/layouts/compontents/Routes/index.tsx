@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, useAppData } from 'umi'
+import styles from './index.less'
 
 export default () => {
   const routes = [
@@ -8,9 +9,9 @@ export default () => {
   ]
 
   return (
-    <div>
+    <div className={styles.routesWrap}>
       {routes.map((route: any) => (
-        <div key={route.path as string}>
+        <div key={route.path as string} className={styles.linkItem}>
           <Link to={route.path as string}>{route.name}</Link>
         </div>
       ))}
