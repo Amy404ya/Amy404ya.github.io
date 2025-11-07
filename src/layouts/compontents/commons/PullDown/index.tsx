@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styles from './index.less'
 
 
-export default ({data,defaultValue,setDefaultValue,isChangeDefault = false}:any) => {
+export default ({data,defaultValue,moreChange=()=>{}}:any) => {
   const [visable,setVisable] = useState(false)
 
   const showPullDown = () => {
@@ -14,11 +14,9 @@ export default ({data,defaultValue,setDefaultValue,isChangeDefault = false}:any)
   const togglePullDown = () => {
     setVisable(v => !v)
   }
-  const langChange = (i:any) => {
+  const handleChange = (i:any) => {
     setVisable(false)
-    if(isChangeDefault){
-      setDefaultValue(i.icon)
-    }
+    moreChange(i)
   }
   return (
     <div className={styles.pullDownWarper} onMouseEnter={showPullDown} onMouseLeave={hidePullDown}>
@@ -27,7 +25,7 @@ export default ({data,defaultValue,setDefaultValue,isChangeDefault = false}:any)
         {data.map((i:any,idx:number)=>{
           const { item } = i;
           return (
-            <div key={`lang_${idx}`} className={styles.item} onClick={() => langChange(i)}>{item}</div>
+            <div key={`lang_${idx}`} className={styles.item} onClick={() => handleChange(i)}>{item}</div>
           )
         })}
       </div>

@@ -16,7 +16,7 @@ export default defineConfig({
   base,
   outputPath: 'dist',
   history: {
-    type: 'hash',
+    type: 'browser',
   },
   routes: [
     { path: "/", component: "Home", name: 'Home' },
