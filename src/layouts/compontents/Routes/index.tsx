@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link, useAppData } from 'umi'
+import intl from "react-intl-universal";
 import styles from './index.less'
 
 export default () => {
   const routes = [
-    { path: "/", component: "Home", name: '首页' },
-    { path: "/test", component: "Test", name: '练功房' },
+    { path: "/", component: "Home", name: intl.get('header.home') },
+    { path: "/test", component: "Test", name: intl.get('header.home') },
   ]
 
   return (
