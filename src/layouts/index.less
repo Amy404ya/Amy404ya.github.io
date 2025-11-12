@@ -2,10 +2,24 @@
 @import url(@/theme.less);
 
 .navs {
+  position: relative;
   width: 100%;
   height: 100%;
   background: var(--bg-color);
-  color: var(--text-color);
+  color: #fff;
+  background-image: var(--bg);
+  background-size: cover;
+  z-index: 0;
+  &::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: var(--overlay);
+    pointer-events: none;
+    z-index: -1;
+  }
   ul {
     padding: 0;
     list-style: none;
