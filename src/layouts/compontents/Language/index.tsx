@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import PullDown from '../commons/PullDown'
-import { langChangeUrl } from '@/tools/index'
+import { langChangeUrl,addLocaleToLink } from '@/tools/index'
 import ChineseImg from '@/assets/lang/Chinese.png'
 import EnglishImg from '@/assets/lang/English.png'
 import JapaneseImg from '@/assets/lang/Japanese.png'

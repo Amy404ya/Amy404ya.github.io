@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link, useAppData } from 'umi'
+import { addLocaleToLink } from '@/tools/index'
 import intl from "react-intl-universal";
 import styles from './index.less'
 
 export default () => {
   const routes = [
-    { path: "/", component: "Home", name: intl.get('header.home') },
-    { path: "/test", component: "Test", name: intl.get('header.home') },
+    { path: addLocaleToLink("/"), component: "Home", name: intl.get('header.home') },
+    { path: addLocaleToLink("/test"), component: "Test", name: intl.get('header.test') },
   ]
 
   return (

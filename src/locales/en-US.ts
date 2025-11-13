@@ -3,5 +3,6 @@ module.exports = {
   header: {
     home:'Home',
     test:'Test',
+    logo: "Amy's SecretHut",
   }
 }

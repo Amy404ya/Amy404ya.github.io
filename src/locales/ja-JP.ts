@@ -1,7 +1,8 @@
 module.exports = {
   currentLocale: "ja",
   header: {
-    home:'首页 ri',
-    test:'练功房 ri ',
+    home:'フロントページ',
+    test:'練習室',
+    logo: '秘密の小屋',
   }
 }
