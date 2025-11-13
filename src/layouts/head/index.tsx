@@ -4,6 +4,7 @@ import Logo from '../compontents/Logo'
 import Routes from '../compontents/Routes'
 import ThemeBtn from '../compontents/ThemeBtn'
 import Language from '../compontents/Language'
+import DailyQuote from '../compontents/DailyQuote'
 
 export default () => {
   return (
@@ -12,6 +13,7 @@ export default () => {
       <Routes />
       <ThemeBtn />
       <Language />
+      <DailyQuote />
     </div>
   )
 }
