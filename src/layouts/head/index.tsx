@@ -9,10 +9,12 @@ import DailyQuote from '../compontents/DailyQuote'
 export default () => {
   return (
     <div className={styles.headerWrapper}>
-      <Logo />
-      <Routes />
-      <ThemeBtn />
-      <Language />
+      <div className={styles.topWrap}>
+        <Logo />
+        <Routes />
+        <ThemeBtn />
+        <Language />
+      </div>
       <DailyQuote />
     </div>
   )

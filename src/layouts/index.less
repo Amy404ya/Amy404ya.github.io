@@ -8,7 +8,9 @@
   background: var(--bg-color);
   color: #fff;
   background-image: var(--bg);
-  background-size: cover;
+  background-repeat: no-repeat;      /* 防止图片平铺 */
+  background-position: center center;/* 水平和垂直都居中 */
+  background-size: cover;           /* 根据需要调整图片缩放方式 */
   z-index: 0;
   &::after{
     content: '';

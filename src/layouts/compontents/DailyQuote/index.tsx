@@ -15,8 +15,10 @@ export default () => {
 
   return (
     <div className={styles.dailyQuote}>
-      <span>{randomQuote.quote}</span>
-      {(randomQuote.source || randomQuote.author) && <span>——{randomQuote.source || randomQuote.author}</span>}
+      <div className={styles.quoteWrap}>
+        <span>{randomQuote.quote}</span>
+        {(randomQuote.source || randomQuote.author) && <span>——{randomQuote.source || randomQuote.author}</span>}
+      </div>
     </div>
   )
 }
