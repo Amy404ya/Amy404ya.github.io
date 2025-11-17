@@ -6,7 +6,15 @@ import ThemeBtn from '../compontents/ThemeBtn'
 import Language from '../compontents/Language'
 import DailyQuote from '../compontents/DailyQuote'
 
-export default () => {
+type HeadProps = {
+  showDailyQuote: boolean
+}
+
+// interface HeadProps1 {
+//   showDailyQuote: boolean
+// }
+
+export default ({ showDailyQuote }: HeadProps) => {
   return (
     <div className={styles.headerWrapper}>
       <div className={styles.topWrap}>
@@ -15,7 +23,7 @@ export default () => {
         <ThemeBtn />
         <Language />
       </div>
-      <DailyQuote />
+      {showDailyQuote ? <DailyQuote /> : null}
     </div>
   )
 }
