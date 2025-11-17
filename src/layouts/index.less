@@ -11,6 +11,7 @@
   background-repeat: no-repeat;      /* 防止图片平铺 */
   background-position: center center;/* 水平和垂直都居中 */
   background-size: cover;           /* 根据需要调整图片缩放方式 */
+  overflow-y: auto;
   z-index: 0;
   &::after{
     content: '';
@@ -22,12 +23,22 @@
     pointer-events: none;
     z-index: -1;
   }
-  ul {
-    padding: 0;
-    list-style: none;
+
+  .innerWrap{
+    width: 100%;
+    padding-top: 108px;
     display: flex;
-  }
-  li {
-    margin-right: 1em;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100%);
+    :global{
+      .footer{
+        width: 100% !important;
+        padding: 0;
+        height: 50px;
+        overflow-y: unset;
+      }
+    }
   }
 }

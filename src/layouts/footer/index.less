@@ -1,0 +1,23 @@
+.footer{
+  // position: absolute;
+  width: 100%;
+  // bottom: 0;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, .3);
+  margin-top: 40px;
+}
+
+.footer::after {
+  content: '';
+  position: absolute;
+  top: 0; /* 定位在顶部 */
+  left: 0;
+  right: 0;
+  background: var(--linear-line);
+  display: block;
+  height: 1px;
+  opacity: .4;
+}

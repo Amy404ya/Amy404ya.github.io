@@ -4,5 +4,8 @@ module.exports = {
     home:'Home',
     test:'Test',
     logo: "Amy's SecretHut",
+  },
+  footer: {
+    copyright:'Copyright',
   }
 }

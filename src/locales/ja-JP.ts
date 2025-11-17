@@ -4,5 +4,8 @@ module.exports = {
     home:'フロントページ',
     test:'練習室',
     logo: '秘密の小屋',
+  },
+  footer: {
+    copyright:'著作権',
   }
 }
