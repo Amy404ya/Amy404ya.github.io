@@ -13,6 +13,9 @@
   background-size: cover;           /* 根据需要调整图片缩放方式 */
   overflow-y: auto;
   z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   &::after{
     content: '';
     position: fixed;
@@ -25,7 +28,7 @@
   }
 
   .innerWrap{
-    width: 100%;
+    width: 1200px;
     padding-top: 108px;
     display: flex;
     justify-content: center;
@@ -33,7 +36,7 @@
     align-items: center;
     :global{
       .footer{
-        width: 100% !important;
+        width: calc(100vw - 6px) !important;
         padding: 0;
         height: 50px;
         overflow-y: unset;
