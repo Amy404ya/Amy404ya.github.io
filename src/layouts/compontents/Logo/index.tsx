@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '@/assets/logo.png'
+import logo from '@/assets/logo.jpg'
 import intl from "react-intl-universal";
 import styles from './index.less'
 
