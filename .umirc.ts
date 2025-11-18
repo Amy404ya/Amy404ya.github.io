@@ -21,6 +21,7 @@ export default defineConfig({
   routes: [
     { path: "/", component: "Home", name: 'Home' },
     { path: "/test", component: "Test", name: 'Test' },
+    { path: "/training", component: "Training", name: 'Training',layout: false, },
     { path: '/*', redirect: '/', keepQuery: true },
   ],
   npmClient: 'pnpm',
