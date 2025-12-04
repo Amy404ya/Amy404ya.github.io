@@ -1,4 +1,5 @@
 export * from './langChangeUrl'
 export * from './addLocaleToLink'
+export * from './parseLrc'
 export {default as useWindowSize} from './useWindowSize'
 export { default as useLocale } from './useLocale'

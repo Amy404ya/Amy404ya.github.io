@@ -19,13 +19,14 @@ export default defineConfig({
     type: 'browser',
   },
   routes: [
-    { path: "/", component: "Home", name: 'Home' },
+    { path: "/", component: "Home", name: 'Home',layout: false,  },
     { path: "/test", component: "Test", name: 'Test' },
     { path: "/training", component: "Training", name: 'Training',layout: false, },
     { path: '/*', redirect: '/', keepQuery: true },
   ],
+  headScripts:['/fonts/iconfont.js'],
   npmClient: 'pnpm',
-  favicons: ['/assets/favicon.ico'],
+  favicons: ['/public/assets/favicon.ico'],
   metas: [
     {
       name: 'viewport',

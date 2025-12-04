@@ -1,0 +1,93 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "688097",
+      "name": "上一首 上一个",
+      "font_class": "shangyishoushangyige",
+      "unicode": "e78a",
+      "unicode_decimal": 59274
+    },
+    {
+      "icon_id": "688128",
+      "name": "下一个 下一首",
+      "font_class": "xiayigexiayishou",
+      "unicode": "e7a5",
+      "unicode_decimal": 59301
+    },
+    {
+      "icon_id": "2076208",
+      "name": "快退",
+      "font_class": "kuaitui",
+      "unicode": "e878",
+      "unicode_decimal": 59512
+    },
+    {
+      "icon_id": "2076210",
+      "name": "快进",
+      "font_class": "kuaijin",
+      "unicode": "e879",
+      "unicode_decimal": 59513
+    },
+    {
+      "icon_id": "6036289",
+      "name": "列表循环",
+      "font_class": "liebiaoxunhuan",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "7315895",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "32490661",
+      "name": "助眠音乐-单曲循环",
+      "font_class": "zhumianyinle-danquxunhuan",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "32490665",
+      "name": "助眠音乐-随机播放",
+      "font_class": "zhumianyinle-suijibofang",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "39025340",
+      "name": "音量调节（高）",
+      "font_class": "yinliangtiaojie",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "39025342",
+      "name": "音量调节（关闭)",
+      "font_class": "a-yinliangtiaojieguanbi",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "41559457",
+      "name": "播放",
+      "font_class": "bofang1",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "42743122",
+      "name": "倍速",
+      "font_class": "beisu",
+      "unicode": "e6d4",
+      "unicode_decimal": 59092
+    }
+  ]
+}
